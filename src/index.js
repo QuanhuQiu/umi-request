@@ -1,7 +1,8 @@
-import fetch from './lib/fetch';
-import request, { extend } from './request';
+import request, { extend, fetch } from './request';
+import Onion from './onion';
 import { RequestError, ResponseError } from './utils';
+import { AbortController, AbortSignal } from './cancel/abortControllerCancel';
 
-export { fetch, extend, RequestError, ResponseError };
+export { extend, RequestError, ResponseError, Onion, fetch, AbortController, AbortSignal };
 
 export default request;
